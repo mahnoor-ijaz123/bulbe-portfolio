@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img{
+            float: left;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <img id="preview" src="white.jpg" width ="200" height="300" alt="white bulb">
+   <button onclick="witch_on()" type="button" name="button">ON</button>
+    <button onclick="witch_off()" type="button" name="button">OFF</button>
+    <select onchange="document.getElementById('preview').src=this.value">
+        <option value="red.png">red</option>
+        <option value="blue.png">blue</option>
+        <option value="green.png">green</option>
+    
+      <!--  <option><button onclick="red()" type="button" name="button">red</button></option>
+        <option><button onclick="green()" type="button" name="button">green</button></option>
+        <option><button onclick="blue()" type="button" name="button">blue</button></option>-->
+        
+    </select>
+
+
+    <script src="script.js" charset="UTF-8"></script>
+</body>
+</html>
